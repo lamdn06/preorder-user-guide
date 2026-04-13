@@ -83,9 +83,11 @@ The delivery information is shown to customers on the product page, cart, and or
 {% step %}
 ### Choose when to show Pre-Order
 
+Below the campaign name, the **When to show Pre-Order** card controls when the Pre-Order button replaces "Add to Cart" on your storefront.
+
 ![When to show Pre-Order and Continue Selling](images/step1-preorder-trigger-framed.png)
 
-Find the **When to show Pre-Order** card and select a trigger:
+Select a trigger:
 
 - **Out of stock** *(Most common)* — the Pre-Order button appears only when a product variant's inventory reaches zero. While in stock, customers see "Add to Cart".
 - **Always** — the Pre-Order button appears for all products in this campaign, regardless of stock level.
@@ -103,9 +105,11 @@ This setting **cannot be changed while the campaign is active**. Pause the campa
 {% step %}
 ### Configure Continue Selling
 
+Below "When to show Pre-Order", the **Continue Selling** card controls how the app manages Shopify's "Continue selling when out of stock" inventory setting.
+
 ![Continue Selling settings](images/step1-continue-selling-framed.png)
 
-In the **Continue Selling** card, choose how the app manages Shopify's inventory policy:
+Choose a mode:
 
 - **Automatic** *(Recommended)* — the app automatically enables "Continue selling when out of stock" for campaign products, and restores the original setting when the campaign ends.
 - **Manual** — you manage "Continue selling" yourself in Shopify Admin. The app does not modify inventory policies.

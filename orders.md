@@ -113,73 +113,49 @@ The app automatically syncs orders via webhooks. Manual sync is only needed if y
 
 ## Collect Payment
 
-When a campaign uses **Partial payment**, customers pay a deposit at checkout and the remaining balance is collected later. The **Collect Payment** feature lets you manually trigger payment collection.
+When a campaign uses **Partial payment**, customers pay a deposit at checkout and the remaining balance is collected later. The **Collect Payment** feature lets you manually trigger payment collection for one or multiple orders.
 
-### View order payment details
-
-Click any **order number** to open the detail page.
-
-![Order detail with payment summary](images/order-detail-framed.png)
+![Collect payments — select orders and confirm](images/collect-payment-framed.png)
 
 {% stepper %}
 
 {% step %}
-### Review payment summary
+### Select orders to collect
 
-The **Payment Summary** sidebar shows the current payment state:
+Use the checkboxes on the left to select orders with outstanding balances. You can select individual orders or click **Select all** to select every order on the page.
 
-- **Total**: full order amount.
-- **Deposit paid**: amount already collected at checkout.
-- **Remaining**: outstanding balance due from the customer.
-- **Due date**: when the remaining balance is scheduled to be collected.
-- **Status**: current payment status.
-- **Payment type**: the payment method used (e.g., Partial 20%).
+Once selected, the **Collect payments** button appears at the top of the table.
 {% endstep %}
 
 {% step %}
-### Review payment timeline
+### Confirm and collect
 
-The **Payment Timeline** section shows a chronological record of all payment events — order creation, deposit payment, and remaining balance collection (or failure).
-{% endstep %}
+Click **Collect payments** to open the confirmation modal:
 
-{% step %}
-### Collect remaining balance (single order)
-
-When an order has a remaining balance, a **Collect remaining** button appears in the Payment Summary section. Click it to open the collection modal:
-
-- The modal shows the exact remaining amount to collect.
+- The modal shows how many orders will be processed (e.g., "You're about to collect the remaining balance from **10** preorder(s).").
 - **Automatically send invoice if charge fails**: enabled by default. If the charge fails, the customer receives an invoice email with a link to pay manually.
-- Click **Collect payment** to process.
+- Customize the invoice email in **Shopify Admin > Settings > Notifications**.
+
+Click **Collect payments** to start processing. Each order is charged using the customer's payment method on file via Shopify.
 
 {% hint style="info" %}
-The **Collect remaining** button only appears when the order status is **Partially paid**, **Failed**, or **Processing** and has a remaining balance greater than zero.
+Orders that are already fully paid will be automatically skipped — only orders with remaining balances are processed.
 {% endhint %}
 {% endstep %}
 
 {% step %}
-### Collect payments in bulk
+### Review results
 
-From the order list, use the checkboxes to select multiple orders with outstanding balances, then click **Collect payments**.
+After collection completes, a toast notification shows the results:
 
-- The modal shows how many orders will be processed.
-- For 50+ orders, a caution message warns that processing may take a few minutes.
-- A progress bar shows the collection progress.
-
-After collection, a toast notification shows results: collected, invoices sent, failed, and skipped counts.
+- **Collected**: orders successfully charged.
+- **Invoices sent**: invoices sent for failed charges.
+- **Failed**: orders where collection failed.
+- **Skipped**: orders already paid or with no remaining balance.
 
 {% hint style="success" %}
 Tip: After bulk collection, check the **Failed** tab to follow up on orders that couldn't be charged.
 {% endhint %}
-{% endstep %}
-
-{% step %}
-### Invoice fallback
-
-When a charge fails and **Automatically send invoice if charge fails** is enabled:
-
-1. The app sends an invoice email to the customer via Shopify.
-2. The customer receives a link to complete payment manually.
-3. You can customize the invoice email template in **Shopify Admin > Settings > Notifications**.
 {% endstep %}
 
 {% endstepper %}
