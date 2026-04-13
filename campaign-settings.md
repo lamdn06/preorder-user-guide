@@ -8,7 +8,7 @@ description: Step 1 of the campaign wizard — configure campaign name, products
 
 Navigate to **AOV.ai Pre-Order > Preorders > Create campaign** (or click **Edit** on an existing campaign). The wizard opens on **Step 1: Campaign setting**.
 
-![Step 1 — Campaign Settings](images/step1-top-framed.png)
+![Step 1 — Campaign Settings](images/step1-preorder-trigger-framed.png)
 
 {% stepper %}
 
