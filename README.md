@@ -51,10 +51,7 @@ Before setting up your first pre-order campaign, make sure you have:
 | Guide | Description |
 |-------|-------------|
 | [Campaign List](campaign-list.md) | View, filter, and manage your pre-order campaigns |
-| [Campaign Settings (Step 1)](campaign-settings.md) | Configure campaign name, products, and delivery date |
-| [When to Show Pre-Order](when-to-show-preorder.md) | Choose when the Pre-Order button replaces "Add to Cart" |
-| [Continue Selling](continue-selling.md) | Manage Shopify's "Continue selling when out of stock" setting |
+| [Campaign Settings (Step 1)](campaign-settings.md) | Configure campaign name, products, pre-order trigger, continue selling, and delivery date |
 | [Payment Settings (Step 2)](payment-settings.md) | Choose full or partial payment, set deposit amount |
 | [Display Settings (Step 3)](display-settings.md) | Customize button, badge, and messages |
-| [Orders & Reports](orders.md) | View, filter, and export pre-order reports |
-| [Collect Payment](collect-payment.md) | Collect remaining balance from partial payment orders |
+| [Orders & Reports](orders.md) | View, filter, export pre-order reports, and collect payments |
