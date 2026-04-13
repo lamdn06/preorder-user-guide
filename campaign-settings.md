@@ -20,6 +20,49 @@ Navigate to **AOV.ai Pre-Order > Preorders > Create campaign** (or click **Edit*
 {% endstep %}
 
 {% step %}
+### Choose when to show Pre-Order
+
+Below the campaign name, the **When to show Pre-Order** card controls when the Pre-Order button replaces "Add to Cart" on your storefront.
+
+![When to show Pre-Order and Continue Selling](images/step1-preorder-trigger-framed.png)
+
+Select a trigger:
+
+- **Out of stock** *(Most common)* — the Pre-Order button appears only when a product variant's inventory reaches zero. While in stock, customers see "Add to Cart".
+- **Always** — the Pre-Order button appears for all products in this campaign, regardless of stock level.
+
+| Trigger | Product in stock | Product out of stock |
+|---------|-----------------|---------------------|
+| **Out of stock** | Shows "Add to Cart" | Shows "Pre-Order" |
+| **Always** | Shows "Pre-Order" | Shows "Pre-Order" |
+
+{% hint style="info" %}
+This setting **cannot be changed while the campaign is active**. Pause the campaign or duplicate it to use a different trigger.
+{% endhint %}
+{% endstep %}
+
+{% step %}
+### Configure Continue Selling
+
+Below "When to show Pre-Order", the **Continue Selling** card controls how the app manages Shopify's "Continue selling when out of stock" inventory setting.
+
+![Continue Selling settings](images/step1-continue-selling-framed.png)
+
+Choose a mode:
+
+- **Automatic** *(Recommended)* — the app automatically enables "Continue selling when out of stock" for campaign products, and restores the original setting when the campaign ends.
+- **Manual** — you manage "Continue selling" yourself in Shopify Admin. The app does not modify inventory policies.
+
+{% hint style="warning" %}
+If you choose **Manual** with the **Out of stock** trigger, make sure "Continue selling when out of stock" is enabled for all campaign products in Shopify Admin. Otherwise customers will see "Sold out" instead of "Pre-Order".
+{% endhint %}
+
+{% hint style="success" %}
+Tip: Unlike the pre-order trigger, you **can change** the continue selling mode on an active campaign. A confirmation modal will explain the immediate effect.
+{% endhint %}
+{% endstep %}
+
+{% step %}
 ### Add products to the campaign
 
 Click **Add products** to open the Shopify product picker. Select one or more products to include.
@@ -78,49 +121,6 @@ Based on your chosen delivery type, fill in the corresponding field:
 - **Custom text** → type your delivery note.
 
 The delivery information is shown to customers on the product page, cart, and order confirmation.
-{% endstep %}
-
-{% step %}
-### Choose when to show Pre-Order
-
-Below the campaign name, the **When to show Pre-Order** card controls when the Pre-Order button replaces "Add to Cart" on your storefront.
-
-![When to show Pre-Order and Continue Selling](images/step1-preorder-trigger-framed.png)
-
-Select a trigger:
-
-- **Out of stock** *(Most common)* — the Pre-Order button appears only when a product variant's inventory reaches zero. While in stock, customers see "Add to Cart".
-- **Always** — the Pre-Order button appears for all products in this campaign, regardless of stock level.
-
-| Trigger | Product in stock | Product out of stock |
-|---------|-----------------|---------------------|
-| **Out of stock** | Shows "Add to Cart" | Shows "Pre-Order" |
-| **Always** | Shows "Pre-Order" | Shows "Pre-Order" |
-
-{% hint style="info" %}
-This setting **cannot be changed while the campaign is active**. Pause the campaign or duplicate it to use a different trigger.
-{% endhint %}
-{% endstep %}
-
-{% step %}
-### Configure Continue Selling
-
-Below "When to show Pre-Order", the **Continue Selling** card controls how the app manages Shopify's "Continue selling when out of stock" inventory setting.
-
-![Continue Selling settings](images/step1-continue-selling-framed.png)
-
-Choose a mode:
-
-- **Automatic** *(Recommended)* — the app automatically enables "Continue selling when out of stock" for campaign products, and restores the original setting when the campaign ends.
-- **Manual** — you manage "Continue selling" yourself in Shopify Admin. The app does not modify inventory policies.
-
-{% hint style="warning" %}
-If you choose **Manual** with the **Out of stock** trigger, make sure "Continue selling when out of stock" is enabled for all campaign products in Shopify Admin. Otherwise customers will see "Sold out" instead of "Pre-Order".
-{% endhint %}
-
-{% hint style="success" %}
-Tip: Unlike the pre-order trigger, you **can change** the continue selling mode on an active campaign. A confirmation modal will explain the immediate effect.
-{% endhint %}
 {% endstep %}
 
 {% step %}
